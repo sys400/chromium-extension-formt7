@@ -9,5 +9,6 @@ window.onload = function() {
     // Simulación de un trabajo pesado
     setTimeout(() => {
         infoElement.innerHTML = `Hilo ${threadId} completado ✅`;
+        document
     }, Math.random() * 5000 + 1000);
 };

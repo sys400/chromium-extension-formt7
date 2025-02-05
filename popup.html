@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extensión Multi-Ventanas</title>
+    <title>Fast autocomplete loan form</title>
     <style>
         body { width: 250px; font-family: Arial, sans-serif; padding: 10px; }
-        button, input { width: 100%; padding: 5px; margin-top: 10px; }
+        button, input, select { width: 100%; padding: 5px; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <h2>Extensión Multi-Ventanas</h2>
+    <h2>Fast autocomplete loan form</h2>
     <label for="windows">Número de Ventanas:</label>
     <input type="number" id="windows" value="4" min="1" max="16">
     <button id="startBtn">Abrir Ventanas</button>
     <div id="output"></div>
+    <h2>Configuración de Proxy</h2>
+    <label for="proxyType">Tipo de Proxy:</label>
+    <select id="proxyType">
+        <option value="http">HTTP</option>
+        <option value="socks4">SOCKS4</option>
+        <option value="socks5">SOCKS5</option>
+    </select>
+    
+    <label for="proxyHost">Host:</label>
+    <input type="text" id="proxyHost" placeholder="Ejemplo: 192.168.1.1">
+    
+    <label for="proxyPort">Puerto:</label>
+    <input type="number" id="proxyPort" placeholder="Ejemplo: 8080">
+    
+    <button id="setProxy">Activar Proxy</button>
+    <button id="disableProxy">Desactivar Proxy</button>
     <script src="popup.js"></script>
 </body>
 </html>

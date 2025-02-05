@@ -13,9 +13,24 @@
     "permissions": [
         "storage",
         "activeTab",
-        "windows"
+        "windows",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "proxy",
+        "tabs"
     ],
     "host_permissions": [
-        "https://*/*"
+        "<all_urls>"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "worker.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
     ]
 }
